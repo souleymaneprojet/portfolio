@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommandations</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .sidebar-pdf {
+      width: 200px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+
+    .sidebar-pdf h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .sidebar-pdf a {
+      display: block;
+      margin-bottom: 12px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .sidebar-pdf a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+
+    .contact-info {
+      font-style: italic;
+      margin-top: 1em;
+      color: #555;
+    }
+
+    footer {
+      width: 100%;
+      padding: 1em;
+      background-color: #f1f1f1;
+      text-align: center;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sidebar-pdf">
+  <h3>📄 Documents</h3>
+  <a href="pdf/CV_data_CDI_CDD.pdf" download target="_blank">📄 CV</a>
+  <a href="pdf/Lettre_de_recommandation_DAFFE.pdf" download target="_blank">📄 Recommandation Joanna</a>
+  <a href="pdf/Lettre_de_recommandation_Souleymane.pdf" download target="_blank">📄 Recommandation AREP</a>
+  <a href="pdf/Lettre de recommandation de M DAFFE.cleaned.pdf" download target="_blank">📄 Recommandation MANE</a>
+    <a href="pdf/" download target="_blank">📄 Lettre de Motivation</a>
+</div>
+
+
+  <main>
+    <header>
+      <h1>Recommandations</h1>
+      <nav>
+        <a href="index.html">Accueil</a> |
+        <a href="competences.html">Compétences</a> |
+        <a href="experiences.html">Expériences</a> |
+        <a href="formation.html">Formation</a> |
+        <a href="projets_realises.html">Projets</a> |
+        <a href="certifications.html">Certifications</a> |
+        <a href="recommandations.html">Recommandations</a> |
+        <a href="contact.html">Contact</a> 
+      </nav>
+    </header>
+
+    <section class="card">
+      <h3>Stéphane Fritsch – Tuteur de stage chez MANE FILS</h3>
+      <p>
+        J’ai le plaisir de recommander M. Daffe Souleymane pour son ambition et sa passion en tant qu’étudiant Data Analyst. 
+        Pendant son stage chez MANE FILS, il s’est montré assidu, motivé, et très investi dans les outils analytiques (Python, R Studio, Power BI).
+      </p>
+      <p>
+        Il a brillamment utilisé Power BI pour créer des dashboards interactifs, prouvant sa maîtrise de l’outil et sa capacité à en extraire des insights stratégiques.
+      </p>
+      <p><strong>Conclusion :</strong> Un jeune talent sérieux, rigoureux et prometteur dans le domaine de l’analyse de données.</p>
+      <div class="contact-info">
+        Contact sur demande
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Joanna Faddoul – Docteure en Mathématiques Appliquées</h3>
+      <p>
+        M. Daffe a été un étudiant rigoureux, résilient et engagé, notamment en Python et développement R Shiny. 
+        Il a toujours su se montrer réceptif aux retours et améliorer ses compétences.
+      </p>
+      <p><strong>Conclusion :</strong> Son esprit d’équipe et sa persévérance font de lui un atout pour toute organisation technique ou académique.</p>
+      <div class="contact-info">
+        Contact sur demande
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Marie Chaumaz – Responsable BIM & Data, AREP</h3>
+      <p>
+        Souleymane s’est rapidement intégré à notre équipe. Il a mené des travaux autour du BIM et de la data, notamment sur un outil de calcul d’empreinte carbone à partir de modèles Revit.
+      </p>
+      <p>
+        Il a démontré autonomie, rigueur et initiative dans le développement de fonctionnalités clés en Python, et a su produire des visualisations utiles pour la prise de décision.
+      </p>
+      <p><strong>Conclusion :</strong> Un excellent profil technique et humain, prêt à contribuer sur des projets ambitieux et durables.</p>
+      <div class="contact-info">
+        Contact sur demande
+      </div>
+    </section>
+
+    <footer>
+      <p>Souleymane Daffe — Data Scientist / Analyst / Dev IA</p>
+    </footer>
+  </main>
+</body>
+</html>

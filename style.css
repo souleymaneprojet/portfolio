@@ -1,0 +1,619 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav {
+  margin-top: 1em;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+main {
+  padding: 2em;
+}
+.project {
+  background: white;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+  background: #ddd;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+/* MENU ANIMÉ */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #2c3e50;
+  padding: 1em 0;
+}
+
+nav a {
+  position: relative;
+  margin: 0 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #1abc9c;
+  transition: width 0.4s ease;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1abc9c;
+}
+
+.site-info {
+  background: linear-gradient(to bottom right, #f0f8ff, #e0ecff);
+  padding: 30px;
+  border-radius: 12px;
+  margin: 50px auto;
+  max-width: 800px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.site-info h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-info h2::before {
+  content: '';
+  font-size: 28px;
+  animation: pulse 2s infinite;
+}
+
+.site-info p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.tech-list {
+  list-style: square inside;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.tech-list li {
+  margin: 8px 0;
+  font-style: italic;
+  color: #222;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* Animation de base au chargement */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #007acc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  animation: fadeInUp 0.8s ease;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+/* Section principale */
+main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 1s ease;
+}
+
+.project h2 {
+  color: #007acc;
+  margin-top: 0;
+}
+
+.project p {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+/* Cascade d'apparition des projets */
+.project {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Appliquer l’animation uniquement si nécessaire */
+.fade-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Effet de cascade : chaque projet apparaît avec un petit délai */
+.project:nth-child(1) { animation-delay: 0.2s; }
+.project:nth-child(2) { animation-delay: 0.4s; }
+.project:nth-child(3) { animation-delay: 0.6s; }
+.project:nth-child(4) { animation-delay: 0.8s; }
+.project:nth-child(5) { animation-delay: 1s; }
+.project:nth-child(6) { animation-delay: 1.2s; }
+
+/* Effet hover élégant sur les projets */
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.moi-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.moi-texte {
+  flex: 1;
+  min-width: 250px;
+}
+
+.moi-photo {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.bienvenue-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bienvenue-titre {
+  flex: 1;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.moi-photo {
+  max-width: 150px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .bienvenue-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .moi-photo {
+    margin-bottom: 20px;
+  }
+}
+
+/* Structure globale */
+.MOI {
+  padding: 2rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.MOI h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Mise en page du contenu */
+.moi-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Texte */
+.moi-texte {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Image (au cas où tu veux la remettre dans cette section aussi) */
+.moi-photo {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Listes */
+.moi-texte ul {
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+}
+
+.moi-texte li {
+  margin-bottom: 0.8rem;
+}
+
+/* Responsive pour petits écrans */
+@media screen and (max-width: 768px) {
+  .moi-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .moi-photo {
+    margin-top: 1rem;
+  }
+}
+
+
+
+/* ----------- MISE EN PAGE PROPRE sur competence ----------- */
+.project {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.project h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Soulignement propre */
+.project u {
+  font-weight: bold;
+  text-decoration: none;
+  color: #2c3e50;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Effet sur les titres de section */
+.project p strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: #1a237e;
+}
+
+/* ----------- ANIMATION ----------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media screen and (max-width: 768px) {
+  .project {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .project h2 {
+    font-size: 1.6rem;
+  }
+
+  .project p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ===== COMPÉTENCES : STYLE & ANIMATION ===== */
+.competences {
+  background: #fefefe;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.9s ease-out;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.competences h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.competences p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.competences strong {
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #1a237e;
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.competences .sous-titre {
+  font-weight: 600;
+  color: #37474f;
+  display: inline-block;
+  margin-top: 0.4rem;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competences {
+    padding: 1.5rem;
+  }
+
+  .competences h2 {
+    font-size: 1.7rem;
+  }
+
+  .competences p {
+    font-size: 0.95rem;
+  }
+}
+.competences i {
+  color: #1a237e;
+  margin-right: 6px;
+}
+
+.fade-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Section À propos de moi */
+.MOI {
+  background: linear-gradient(to bottom right, #f8fcff, #e8f1ff);
+  padding: 50px 30px;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.MOI h2 {
+  font-size: 28px;
+  color: #007acc;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.moi-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.moi-texte {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.moi-texte ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.moi-texte li {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.moi-texte li:hover {
+  transform: translateX(5px);
+  color: #007acc;
+}
+
+.moi-texte strong {
+  color: #007acc;
+}
+
+
+.btn-download {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #007acc;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-download:hover {
+  background-color: #005fa3;
+}
+
+
